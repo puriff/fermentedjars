@@ -12,7 +12,7 @@ const providerArb = new ethers.providers.StaticJsonRpcProvider(
     "event FermentedJarsFound(uint8 bundleId, uint256[] honeyJarIds)",
     ]
 
-
+//starts at the block where the first jar fermented
 async function getFermentedJarsID() {
     let jars = new ethers.Contract("0x37aa84e2b62a18894610227acb4d3c77346d9c27", jarABI, providerArb)
 
